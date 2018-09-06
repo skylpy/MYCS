@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RelateVideoCell" id="gTV-IL-0wX" customClass="RelateVideoCell">
+            <rect key="frame" x="0.0" y="0.0" width="177" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="177" height="150"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeImage" translatesAutoresizingMaskIntoConstraints="NO" id="fQY-Dc-O37">
+                        <rect key="frame" x="0.0" y="0.0" width="177" height="100"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大家卡刷卡机会和骄傲是大家卡死了开讲啦快结束了就卡死" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91V-PA-dik">
+                        <rect key="frame" x="5" y="100" width="167" height="50"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLY-Q8-bVA">
+                        <rect key="frame" x="0.0" y="0.0" width="177" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="ZhJ-bN-d8D"/>
+                        </constraints>
+                        <state key="normal" image="play_min"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ZhJ-bN-d8D"/>
+                            </mask>
+                        </variation>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="fQY-Dc-O37" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.6667" id="4bt-iE-l8d"/>
+                <constraint firstAttribute="trailing" secondItem="kLY-Q8-bVA" secondAttribute="trailing" id="5vg-n8-Yug"/>
+                <constraint firstItem="91V-PA-dik" firstAttribute="top" secondItem="fQY-Dc-O37" secondAttribute="bottom" id="8gd-IU-DNo"/>
+                <constraint firstItem="kLY-Q8-bVA" firstAttribute="height" secondItem="fQY-Dc-O37" secondAttribute="height" id="Imt-Y7-dcx"/>
+                <constraint firstAttribute="trailing" secondItem="fQY-Dc-O37" secondAttribute="trailing" id="MHg-AZ-YbM"/>
+                <constraint firstItem="91V-PA-dik" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="XHE-TJ-lk4"/>
+                <constraint firstItem="fQY-Dc-O37" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ahs-w0-RgG"/>
+                <constraint firstItem="kLY-Q8-bVA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jvb-xo-Uzw"/>
+                <constraint firstItem="fQY-Dc-O37" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mbX-AU-me2"/>
+                <constraint firstItem="kLY-Q8-bVA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="sLh-sE-Dq9"/>
+                <constraint firstAttribute="trailing" secondItem="91V-PA-dik" secondAttribute="trailing" constant="5" id="ucC-gt-24p"/>
+                <constraint firstAttribute="bottom" secondItem="91V-PA-dik" secondAttribute="bottom" id="wFt-NN-a9x"/>
+            </constraints>
+            <connections>
+                <outlet property="detailL" destination="91V-PA-dik" id="Txx-ZG-2Qr"/>
+                <outlet property="urlImageView" destination="fQY-Dc-O37" id="vcV-qp-s6q"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="placeImage" width="200" height="120"/>
+        <image name="play_min" width="29" height="29"/>
+    </resources>
+</document>

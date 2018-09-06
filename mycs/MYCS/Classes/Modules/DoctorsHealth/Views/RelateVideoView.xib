@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RelateVideoView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xwn-B3-O1C">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="375"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="推荐视频" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPS-jl-QBH">
+                            <rect key="frame" x="10" y="15" width="72" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="wRc-a6-KIw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dU9-fb-7kt">
+                            <rect key="frame" x="0.0" y="50" width="320" height="1"/>
+                            <color key="backgroundColor" red="0.81960784310000001" green="0.81960784310000001" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="cwz-T7-UBb"/>
+                            </constraints>
+                        </view>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="OIo-ns-YfE">
+                            <rect key="frame" x="0.0" y="51" width="320" height="324"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="7" minimumInteritemSpacing="7" id="OP9-Nz-tjn">
+                                <size key="itemSize" width="125" height="150"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="7" minY="10" maxX="7" maxY="10"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="OIo-ns-YfE" firstAttribute="top" secondItem="dU9-fb-7kt" secondAttribute="bottom" id="HHv-Te-Wpy"/>
+                        <constraint firstAttribute="trailing" secondItem="dU9-fb-7kt" secondAttribute="trailing" id="KvN-A0-txX"/>
+                        <constraint firstItem="pPS-jl-QBH" firstAttribute="top" secondItem="Xwn-B3-O1C" secondAttribute="top" constant="15" id="MTh-2f-4XM"/>
+                        <constraint firstItem="dU9-fb-7kt" firstAttribute="top" secondItem="pPS-jl-QBH" secondAttribute="bottom" constant="15" id="Pub-yo-LrT"/>
+                        <constraint firstAttribute="bottom" secondItem="OIo-ns-YfE" secondAttribute="bottom" id="Xc3-Lm-ZGp"/>
+                        <constraint firstAttribute="trailing" secondItem="OIo-ns-YfE" secondAttribute="trailing" id="eKw-Je-d59"/>
+                        <constraint firstItem="OIo-ns-YfE" firstAttribute="leading" secondItem="Xwn-B3-O1C" secondAttribute="leading" id="fiN-oG-eb3"/>
+                        <constraint firstItem="dU9-fb-7kt" firstAttribute="leading" secondItem="Xwn-B3-O1C" secondAttribute="leading" id="r3o-BQ-sHA"/>
+                        <constraint firstItem="pPS-jl-QBH" firstAttribute="leading" secondItem="Xwn-B3-O1C" secondAttribute="leading" constant="10" id="wu4-p2-Nd2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Xwn-B3-O1C" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3z0-Dq-dPq"/>
+                <constraint firstAttribute="trailing" secondItem="Xwn-B3-O1C" secondAttribute="trailing" id="NXp-2j-uAf"/>
+                <constraint firstItem="Xwn-B3-O1C" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WnJ-FJ-REB"/>
+                <constraint firstAttribute="bottom" secondItem="Xwn-B3-O1C" secondAttribute="bottom" id="cAy-eg-eae"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collectionView" destination="OIo-ns-YfE" id="crf-yn-Kqk"/>
+            </connections>
+        </view>
+    </objects>
+</document>

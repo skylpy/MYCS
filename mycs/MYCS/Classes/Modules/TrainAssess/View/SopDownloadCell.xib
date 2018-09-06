@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SopDownloadCell" rowHeight="138" id="KGk-i7-Jjw" customClass="SopDownloadCell">
+            <rect key="frame" x="0.0" y="0.0" width="353" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="353" height="149"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jNM-eY-czA">
+                        <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DQI-Y4-dlx">
+                                <rect key="frame" x="0.0" y="49" width="353" height="1"/>
+                                <color key="backgroundColor" red="0.78039216995239258" green="0.78039216995239258" blue="0.78039216995239258" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="dxx-dY-zub"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="教程一" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKg-4X-aNp">
+                                <rect key="frame" x="15" y="16" width="42" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrows_unfold" translatesAutoresizingMaskIntoConstraints="NO" id="W5v-6t-ep3">
+                                <rect key="frame" x="323" y="21" width="15" height="8"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="8" id="Xbb-qF-PA7"/>
+                                    <constraint firstAttribute="width" constant="15" id="euv-vu-ITi"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GKg-4X-aNp" firstAttribute="centerY" secondItem="jNM-eY-czA" secondAttribute="centerY" id="2dZ-gR-X2l"/>
+                            <constraint firstAttribute="trailing" secondItem="W5v-6t-ep3" secondAttribute="trailing" constant="15" id="AXE-PU-XzT"/>
+                            <constraint firstAttribute="height" constant="50" id="EO8-g2-JfY"/>
+                            <constraint firstItem="DQI-Y4-dlx" firstAttribute="leading" secondItem="jNM-eY-czA" secondAttribute="leading" id="H2p-9f-C74"/>
+                            <constraint firstAttribute="trailing" secondItem="DQI-Y4-dlx" secondAttribute="trailing" id="bDp-0n-DMu"/>
+                            <constraint firstItem="GKg-4X-aNp" firstAttribute="leading" secondItem="jNM-eY-czA" secondAttribute="leading" constant="15" id="bqb-Jy-KbW"/>
+                            <constraint firstItem="W5v-6t-ep3" firstAttribute="centerY" secondItem="jNM-eY-czA" secondAttribute="centerY" id="gX4-GZ-x6D"/>
+                            <constraint firstAttribute="bottom" secondItem="DQI-Y4-dlx" secondAttribute="bottom" id="hKk-eE-jme"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J4H-gz-ihz">
+                        <rect key="frame" x="0.0" y="50" width="353" height="98"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4mA-Dr-0ld">
+                        <rect key="frame" x="0.0" y="148" width="353" height="1"/>
+                        <color key="backgroundColor" red="0.78039216995239258" green="0.78039216995239258" blue="0.78039216995239258" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="3RX-XY-kYj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="jNM-eY-czA" secondAttribute="trailing" id="0ki-zV-ce6"/>
+                    <constraint firstItem="J4H-gz-ihz" firstAttribute="top" secondItem="jNM-eY-czA" secondAttribute="bottom" id="6Jh-eu-aNt"/>
+                    <constraint firstItem="J4H-gz-ihz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="6Pf-KP-V7E"/>
+                    <constraint firstItem="4mA-Dr-0ld" firstAttribute="top" secondItem="J4H-gz-ihz" secondAttribute="bottom" id="7gy-JE-hve"/>
+                    <constraint firstItem="jNM-eY-czA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="84b-9Q-kdv"/>
+                    <constraint firstAttribute="trailing" secondItem="4mA-Dr-0ld" secondAttribute="trailing" id="9Bc-cD-Aw5"/>
+                    <constraint firstItem="jNM-eY-czA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Kgg-kc-Tg1"/>
+                    <constraint firstAttribute="trailing" secondItem="J4H-gz-ihz" secondAttribute="trailing" id="heR-Zy-L5S"/>
+                    <constraint firstAttribute="bottom" secondItem="4mA-Dr-0ld" secondAttribute="bottom" id="l7Y-WA-Mua"/>
+                    <constraint firstItem="4mA-Dr-0ld" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="r1t-In-Psx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contenView" destination="J4H-gz-ihz" id="IVx-LP-Dy2"/>
+                <outlet property="expandImage" destination="W5v-6t-ep3" id="RcZ-RB-4zB"/>
+                <outlet property="headerView" destination="jNM-eY-czA" id="o0f-Ol-2MA"/>
+                <outlet property="nameLabel" destination="GKg-4X-aNp" id="lbB-Ha-DWd"/>
+                <outlet property="titleLabel" destination="GKg-4X-aNp" id="sYp-R4-3HZ"/>
+            </connections>
+            <point key="canvasLocation" x="218.5" y="267"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrows_unfold" width="15" height="8"/>
+    </resources>
+</document>

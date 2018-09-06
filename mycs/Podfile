@@ -1,0 +1,20 @@
+#platform :ios, '7.0'
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'MYCS' do
+    
+    pod 'JSONModel', '1.2.0'
+    pod 'UMengSocial', '4.4'
+    pod 'FMDB', '2.6'
+    pod 'UMengAnalytics', '3.6.6'
+    pod 'RongCloudIMKit', '2.7.2'
+    pod 'LFLiveKit', '2.2.4'
+end
+
+target 'MYCSTests' do
+    
+end
+
+target 'MYCSUITests' do
+    
+end

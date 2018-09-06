@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoadingView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X8A-tc-3F6">
+                    <rect key="frame" x="110" y="190" width="100" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 加载中..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADF-fp-WF5">
+                            <rect key="frame" x="0.0" y="45" width="100" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="jqj-7s-FTl"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="9xd-fD-zZs">
+                            <rect key="frame" x="32" y="0.0" width="37" height="37"/>
+                            <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </activityIndicatorView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="ADF-fp-WF5" firstAttribute="top" secondItem="9xd-fD-zZs" secondAttribute="bottom" constant="8" id="51x-XF-l8b"/>
+                        <constraint firstAttribute="height" constant="100" id="BCT-xo-DKj"/>
+                        <constraint firstAttribute="width" constant="100" id="Gjc-Re-OUe"/>
+                        <constraint firstAttribute="trailing" secondItem="ADF-fp-WF5" secondAttribute="trailing" id="QoY-rs-POt"/>
+                        <constraint firstItem="9xd-fD-zZs" firstAttribute="centerX" secondItem="X8A-tc-3F6" secondAttribute="centerX" id="ep7-dm-fwc"/>
+                        <constraint firstItem="ADF-fp-WF5" firstAttribute="leading" secondItem="X8A-tc-3F6" secondAttribute="leading" id="fcH-rI-6aQ"/>
+                        <constraint firstItem="9xd-fD-zZs" firstAttribute="top" secondItem="X8A-tc-3F6" secondAttribute="top" id="jpb-dw-sVb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="X8A-tc-3F6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Twn-XP-Ws0"/>
+                <constraint firstItem="X8A-tc-3F6" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="hG5-pv-Owh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titleL" destination="ADF-fp-WF5" id="qga-xQ-78L"/>
+            </connections>
+        </view>
+    </objects>
+</document>

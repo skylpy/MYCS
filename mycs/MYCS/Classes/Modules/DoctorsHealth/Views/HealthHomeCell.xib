@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HealthHomeCell" id="KGk-i7-Jjw" customClass="HealthHomeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="210"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="209"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeImage" translatesAutoresizingMaskIntoConstraints="NO" id="fv1-nL-Kaq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="208"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blackHolder" translatesAutoresizingMaskIntoConstraints="NO" id="DOL-VR-n7Y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="208"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  肿瘤  " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYB-XW-XK5">
+                        <rect key="frame" x="15" y="15" width="35" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="W4u-MU-gbS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.2784313725" green="0.75686274509999996" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="圣诞节就看电视剧好看的数据库就好看多舒服就好的方式就开始对进口黄金客。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pE2-Z3-BaN">
+                        <rect key="frame" x="10" y="135" width="300" height="39"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktt-KZ-xfj">
+                        <rect key="frame" x="10" y="182" width="15" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="hqc-A4-djo"/>
+                            <constraint firstAttribute="width" constant="15" id="hu9-cU-Ym8"/>
+                        </constraints>
+                        <state key="normal" image="Healthplay"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000次播放" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRl-kD-vln">
+                        <rect key="frame" x="25" y="182" width="65" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="6x2-yf-a04"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Brw-lH-rGs">
+                        <rect key="frame" x="244" y="180" width="59" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="hgm-Ew-u9k"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <inset key="titleEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title=" 12345" image="support">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <state key="selected" title=" 12345" image="support-click"/>
+                        <connections>
+                            <action selector="praiseBtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vEY-8G-Eke"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  05:06  " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFp-0c-0Q2">
+                        <rect key="frame" x="247" y="5" width="58" height="22"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="jrF-JV-Vi9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="fv1-nL-Kaq" secondAttribute="trailing" id="4AH-ZR-yPn"/>
+                    <constraint firstAttribute="bottom" secondItem="ktt-KZ-xfj" secondAttribute="bottom" constant="7" id="5Oh-qT-yS7"/>
+                    <constraint firstAttribute="trailing" secondItem="DOL-VR-n7Y" secondAttribute="trailing" id="7Eu-x7-H5m"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="yFp-0c-0Q2" secondAttribute="trailing" constant="7" id="BXr-yZ-2cc"/>
+                    <constraint firstItem="DOL-VR-n7Y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Hh9-8h-Cy5"/>
+                    <constraint firstAttribute="bottom" secondItem="WRl-kD-vln" secondAttribute="bottom" constant="6" id="Q0y-Xa-kU8"/>
+                    <constraint firstItem="WRl-kD-vln" firstAttribute="leading" secondItem="ktt-KZ-xfj" secondAttribute="trailing" id="TVf-h3-lSC"/>
+                    <constraint firstItem="ktt-KZ-xfj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="TWU-eo-UwK"/>
+                    <constraint firstAttribute="bottom" secondItem="fv1-nL-Kaq" secondAttribute="bottom" constant="1" id="ULq-i3-4d5"/>
+                    <constraint firstAttribute="bottom" secondItem="Brw-lH-rGs" secondAttribute="bottom" constant="7" id="Uva-K6-brF"/>
+                    <constraint firstItem="pE2-Z3-BaN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="WM9-r1-7Hi"/>
+                    <constraint firstAttribute="bottom" secondItem="DOL-VR-n7Y" secondAttribute="bottom" constant="1" id="WmG-bu-uth"/>
+                    <constraint firstAttribute="trailing" secondItem="Brw-lH-rGs" secondAttribute="trailing" constant="17" id="aMH-Px-FCj"/>
+                    <constraint firstItem="fv1-nL-Kaq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="cBZ-2X-gqc"/>
+                    <constraint firstItem="fv1-nL-Kaq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="dae-qb-7fE"/>
+                    <constraint firstItem="yFp-0c-0Q2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="e4x-wm-fMS"/>
+                    <constraint firstItem="DOL-VR-n7Y" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="j9z-Aa-ePa"/>
+                    <constraint firstItem="sYB-XW-XK5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="peI-ck-vgX"/>
+                    <constraint firstItem="sYB-XW-XK5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="r7o-Ts-ol4"/>
+                    <constraint firstAttribute="trailing" secondItem="pE2-Z3-BaN" secondAttribute="trailing" constant="10" id="sDc-cT-wut"/>
+                    <constraint firstItem="WRl-kD-vln" firstAttribute="top" secondItem="pE2-Z3-BaN" secondAttribute="bottom" constant="8" id="sIh-86-doB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgImageView" destination="fv1-nL-Kaq" id="Idg-j2-bba"/>
+                <outlet property="contenL" destination="pE2-Z3-BaN" id="lrj-T8-oNa"/>
+                <outlet property="lookL" destination="WRl-kD-vln" id="vTd-rQ-aZf"/>
+                <outlet property="praiseBtn" destination="Brw-lH-rGs" id="qQO-wS-gzX"/>
+                <outlet property="timeL" destination="yFp-0c-0Q2" id="QWT-q4-mQy"/>
+                <outlet property="typeL" destination="sYB-XW-XK5" id="RET-d6-Oss"/>
+            </connections>
+            <point key="canvasLocation" x="196" y="267"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Healthplay" width="12" height="12"/>
+        <image name="blackHolder" width="375" height="191"/>
+        <image name="placeImage" width="200" height="120"/>
+        <image name="support" width="21" height="19"/>
+        <image name="support-click" width="20" height="19"/>
+    </resources>
+</document>

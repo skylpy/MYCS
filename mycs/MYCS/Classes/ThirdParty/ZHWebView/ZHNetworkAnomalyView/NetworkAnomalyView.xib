@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NetworkAnomalyView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XtS-XR-1RB">
+                    <rect key="frame" x="0.0" y="58" width="320" height="325"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="net-wifi" translatesAutoresizingMaskIntoConstraints="NO" id="rLd-zp-uXR">
+                            <rect key="frame" x="62" y="0.0" width="196" height="153"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="196" id="ygh-m9-esf"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="网络无法连接" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwG-6c-9na">
+                            <rect key="frame" x="0.0" y="170" width="320" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="BFC-Ky-h3x"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mw-xB-QaA">
+                            <rect key="frame" x="20" y="230" width="280" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="dht-f0-9pn"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <state key="normal" title="刷新">
+                                <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="mxb-SD-dh8"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUw-nS-WDM">
+                            <rect key="frame" x="80" y="285" width="160" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="DJG-Cg-bjo"/>
+                                <constraint firstAttribute="height" constant="40" id="VuH-or-pVC"/>
+                                <constraint firstAttribute="width" constant="160" id="afb-ai-kio"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="关闭">
+                                <color key="titleColor" red="0.2784313725" green="0.75686274509999996" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="qas-0S-Gmm"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="aUw-nS-WDM" firstAttribute="top" secondItem="4mw-xB-QaA" secondAttribute="bottom" constant="15" id="0EZ-Fv-3G8"/>
+                        <constraint firstAttribute="trailing" secondItem="4mw-xB-QaA" secondAttribute="trailing" constant="20" id="4Iu-1q-fZr"/>
+                        <constraint firstItem="xwG-6c-9na" firstAttribute="leading" secondItem="XtS-XR-1RB" secondAttribute="leading" id="Cv2-2b-Wff"/>
+                        <constraint firstAttribute="height" constant="325" id="FKq-vJ-JsS"/>
+                        <constraint firstItem="rLd-zp-uXR" firstAttribute="top" secondItem="XtS-XR-1RB" secondAttribute="top" id="ZAa-Oz-1Wi"/>
+                        <constraint firstAttribute="trailing" secondItem="xwG-6c-9na" secondAttribute="trailing" id="doa-dh-ADD"/>
+                        <constraint firstItem="4mw-xB-QaA" firstAttribute="top" secondItem="xwG-6c-9na" secondAttribute="bottom" constant="40" id="kwr-Vs-JhN"/>
+                        <constraint firstItem="rLd-zp-uXR" firstAttribute="centerX" secondItem="XtS-XR-1RB" secondAttribute="centerX" id="pW0-dQ-jXB"/>
+                        <constraint firstItem="aUw-nS-WDM" firstAttribute="centerX" secondItem="XtS-XR-1RB" secondAttribute="centerX" id="pbr-mT-SGb"/>
+                        <constraint firstItem="xwG-6c-9na" firstAttribute="top" secondItem="rLd-zp-uXR" secondAttribute="bottom" constant="17" id="qC1-ga-mPf"/>
+                        <constraint firstItem="4mw-xB-QaA" firstAttribute="leading" secondItem="XtS-XR-1RB" secondAttribute="leading" constant="20" id="ssa-q0-00l"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="XtS-XR-1RB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="5M2-cj-uzd"/>
+                <constraint firstItem="XtS-XR-1RB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-20" id="E1R-bx-c9J"/>
+                <constraint firstItem="XtS-XR-1RB" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="Gfk-nE-r7O"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="closeButton" destination="aUw-nS-WDM" id="sDY-cQ-lDE"/>
+                <outlet property="refleshButton" destination="4mw-xB-QaA" id="ubc-1f-Iik"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="net-wifi" width="196" height="153"/>
+    </resources>
+</document>

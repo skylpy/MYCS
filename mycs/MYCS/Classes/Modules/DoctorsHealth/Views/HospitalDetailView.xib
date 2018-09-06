@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HospitalDetailView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="145"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jnL-kZ-luw">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="145"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeImage" translatesAutoresizingMaskIntoConstraints="NO" id="Gx5-Ug-4GS">
+                            <rect key="frame" x="10" y="10" width="67" height="67"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="67" id="Qub-tl-DTz"/>
+                                <constraint firstAttribute="width" constant="67" id="zrJ-Va-hFt"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中山医科大学附属医院" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnj-jr-tot">
+                            <rect key="frame" x="87" y="20" width="160" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="hV9-Mo-N2W"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中华医学会广东外科学会委员会" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07O-7d-DM8">
+                            <rect key="frame" x="87" y="45" width="196" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="ZnK-si-jYx"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="俺啥时候骄傲的杀手的环境看暗杀的环境爱是不大数据库撒娇女家属及卡数据库回家就撒旦监控那家电视剧" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bwe-6f-YEb">
+                            <rect key="frame" x="8" y="90" width="304" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sg2-BP-F0x">
+                            <rect key="frame" x="85" y="8" width="227" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="9JK-eZ-Z0D"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                            <state key="normal" image="health-pack-up"/>
+                            <state key="selected" image="health-unfold"/>
+                            <connections>
+                                <action selector="showDetailBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="VKZ-DM-3Fb"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="sg2-BP-F0x" secondAttribute="trailing" constant="8" id="9gA-fu-F5F"/>
+                        <constraint firstItem="07O-7d-DM8" firstAttribute="top" secondItem="dnj-jr-tot" secondAttribute="bottom" constant="4" id="AeW-P5-wZJ"/>
+                        <constraint firstItem="sg2-BP-F0x" firstAttribute="leading" secondItem="Gx5-Ug-4GS" secondAttribute="trailing" constant="8" id="EkP-Mm-Esm"/>
+                        <constraint firstAttribute="trailing" secondItem="Bwe-6f-YEb" secondAttribute="trailing" constant="8" id="RzJ-6r-oK1"/>
+                        <constraint firstItem="Gx5-Ug-4GS" firstAttribute="top" secondItem="jnL-kZ-luw" secondAttribute="top" constant="10" id="YDd-FV-IDN"/>
+                        <constraint firstItem="Bwe-6f-YEb" firstAttribute="top" secondItem="Gx5-Ug-4GS" secondAttribute="bottom" constant="13" id="eTX-Y4-Psk"/>
+                        <constraint firstItem="dnj-jr-tot" firstAttribute="leading" secondItem="Gx5-Ug-4GS" secondAttribute="trailing" constant="10" id="epG-CY-P1w"/>
+                        <constraint firstItem="sg2-BP-F0x" firstAttribute="top" secondItem="jnL-kZ-luw" secondAttribute="top" constant="8" id="fBB-lb-lFZ"/>
+                        <constraint firstItem="07O-7d-DM8" firstAttribute="leading" secondItem="Gx5-Ug-4GS" secondAttribute="trailing" constant="10" id="hj0-Ax-yae"/>
+                        <constraint firstItem="Bwe-6f-YEb" firstAttribute="leading" secondItem="jnL-kZ-luw" secondAttribute="leading" constant="8" id="iQd-tO-UnL"/>
+                        <constraint firstItem="dnj-jr-tot" firstAttribute="top" secondItem="jnL-kZ-luw" secondAttribute="top" constant="20" id="nNT-7n-hik"/>
+                        <constraint firstItem="Gx5-Ug-4GS" firstAttribute="leading" secondItem="jnL-kZ-luw" secondAttribute="leading" constant="10" id="sFU-Kv-Lcn"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="jnL-kZ-luw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Hyn-me-rJd"/>
+                <constraint firstAttribute="trailing" secondItem="jnL-kZ-luw" secondAttribute="trailing" id="cJo-Ru-JOO"/>
+                <constraint firstItem="jnL-kZ-luw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lcO-d0-dsv"/>
+                <constraint firstAttribute="bottom" secondItem="jnL-kZ-luw" secondAttribute="bottom" id="tAJ-5o-eoh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="hospitalDetailL" destination="Bwe-6f-YEb" id="ZVI-f5-7yq"/>
+                <outlet property="hospitalImageView" destination="Gx5-Ug-4GS" id="9ky-0g-uRY"/>
+                <outlet property="hospitalNameL" destination="dnj-jr-tot" id="6Sz-kq-RPp"/>
+                <outlet property="hospitalOfficeL" destination="07O-7d-DM8" id="9V2-go-xnZ"/>
+                <outlet property="showDetailBtn" destination="sg2-BP-F0x" id="A7Y-BF-Q04"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="health-pack-up" width="15" height="8"/>
+        <image name="health-unfold" width="15" height="8"/>
+        <image name="placeImage" width="200" height="120"/>
+    </resources>
+</document>

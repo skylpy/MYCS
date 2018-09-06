@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="kNR-eF-Vdw" customClass="ShareToolBar">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.34999999403953552" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dwZ-dO-Dos">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pU9-wQ-Mf5">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOb-ab-M3x">
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="y45-T3-nHw"/>
+                            </constraints>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelBtnAction:" destination="kNR-eF-Vdw" eventType="touchUpInside" id="n8Y-Pu-PWQ"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="65U-G3-wED">
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V0u-ha-U8v">
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4yw-fi-qWA">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="5HE-2w-W4q"/>
+                                                <constraint firstAttribute="height" constant="50" id="ORm-QL-TI3"/>
+                                            </constraints>
+                                            <state key="normal" image="icon_weixin_share">
+                                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="shareAction:" destination="kNR-eF-Vdw" eventType="touchUpInside" id="jkh-d8-Sxm"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="DUP-bZ-728"/>
+                                        <constraint firstItem="4yw-fi-qWA" firstAttribute="leading" secondItem="V0u-ha-U8v" secondAttribute="leading" constant="35" id="JZP-uR-igU"/>
+                                        <constraint firstItem="4yw-fi-qWA" firstAttribute="centerX" secondItem="V0u-ha-U8v" secondAttribute="centerX" id="qsr-1j-YV8"/>
+                                        <constraint firstItem="4yw-fi-qWA" firstAttribute="centerY" secondItem="V0u-ha-U8v" secondAttribute="centerY" id="xEw-Eq-Bj0"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="JZP-uR-igU"/>
+                                        </mask>
+                                    </variation>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LdU-u1-CcK">
+                                    <subviews>
+                                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbs-AL-Zjh">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="WGQ-tq-6NE"/>
+                                            </constraints>
+                                            <state key="normal" image="icon_weixin_circle_share">
+                                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="shareAction:" destination="kNR-eF-Vdw" eventType="touchUpInside" id="ugB-zQ-sxU"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="cbs-AL-Zjh" firstAttribute="centerX" secondItem="LdU-u1-CcK" secondAttribute="centerX" id="AxU-nw-OQp"/>
+                                        <constraint firstItem="cbs-AL-Zjh" firstAttribute="top" secondItem="LdU-u1-CcK" secondAttribute="top" id="kKJ-97-bdh"/>
+                                        <constraint firstAttribute="height" constant="50" id="l7b-FT-ceh"/>
+                                        <constraint firstAttribute="bottom" secondItem="cbs-AL-Zjh" secondAttribute="bottom" id="wvu-WQ-gqa"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kUb-dk-pls">
+                                    <subviews>
+                                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d78-fl-1sx">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="HKD-j5-r0C"/>
+                                                <constraint firstAttribute="width" constant="50" id="ZHJ-SB-3EB"/>
+                                            </constraints>
+                                            <state key="normal" image="icon_qq_share">
+                                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="shareAction:" destination="kNR-eF-Vdw" eventType="touchUpInside" id="jUU-0Z-iNp"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="d78-fl-1sx" firstAttribute="centerX" secondItem="kUb-dk-pls" secondAttribute="centerX" id="JFk-lY-zHf"/>
+                                        <constraint firstItem="d78-fl-1sx" firstAttribute="centerY" secondItem="kUb-dk-pls" secondAttribute="centerY" id="eoA-aY-Jy0"/>
+                                        <constraint firstAttribute="height" constant="50" id="s4I-9n-Cwz"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sF9-JU-rFu">
+                                    <subviews>
+                                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5B-TY-Kk5">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="bZN-7q-tpI"/>
+                                            </constraints>
+                                            <state key="normal" image="sns_icon_big">
+                                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="shareAction:" destination="kNR-eF-Vdw" eventType="touchUpInside" id="Eba-Rt-aS5"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="u5B-TY-Kk5" secondAttribute="bottom" id="NBv-Ha-PC8"/>
+                                        <constraint firstAttribute="height" constant="50" id="WyC-65-ij9"/>
+                                        <constraint firstItem="u5B-TY-Kk5" firstAttribute="top" secondItem="sF9-JU-rFu" secondAttribute="top" id="XAB-zJ-vYT"/>
+                                        <constraint firstItem="u5B-TY-Kk5" firstAttribute="centerX" secondItem="sF9-JU-rFu" secondAttribute="centerX" id="dmS-cp-Eld"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="LdU-u1-CcK" firstAttribute="top" secondItem="65U-G3-wED" secondAttribute="top" constant="7" id="2Oz-Qj-pLC"/>
+                                <constraint firstItem="V0u-ha-U8v" firstAttribute="top" secondItem="65U-G3-wED" secondAttribute="top" constant="7" id="4E8-ba-1CX"/>
+                                <constraint firstAttribute="trailing" secondItem="sF9-JU-rFu" secondAttribute="trailing" id="5gy-pE-0K8"/>
+                                <constraint firstItem="sF9-JU-rFu" firstAttribute="leading" secondItem="65U-G3-wED" secondAttribute="leading" constant="360" id="ASC-Bf-RFn"/>
+                                <constraint firstItem="kUb-dk-pls" firstAttribute="leading" secondItem="65U-G3-wED" secondAttribute="leading" constant="240" id="Gcx-wx-ZWU"/>
+                                <constraint firstItem="LdU-u1-CcK" firstAttribute="leading" secondItem="V0u-ha-U8v" secondAttribute="trailing" id="HvW-V1-4dI"/>
+                                <constraint firstItem="LdU-u1-CcK" firstAttribute="width" secondItem="kUb-dk-pls" secondAttribute="width" id="JVD-bo-FvR"/>
+                                <constraint firstItem="kUb-dk-pls" firstAttribute="leading" secondItem="LdU-u1-CcK" secondAttribute="trailing" id="Lud-gI-DNN"/>
+                                <constraint firstAttribute="bottom" secondItem="kUb-dk-pls" secondAttribute="bottom" constant="7" id="OpI-lg-8BJ"/>
+                                <constraint firstItem="LdU-u1-CcK" firstAttribute="leading" secondItem="V0u-ha-U8v" secondAttribute="trailing" id="aa8-Dj-Mgd"/>
+                                <constraint firstAttribute="bottom" secondItem="V0u-ha-U8v" secondAttribute="bottom" constant="7" id="fy6-28-eMj"/>
+                                <constraint firstItem="V0u-ha-U8v" firstAttribute="width" secondItem="LdU-u1-CcK" secondAttribute="width" id="gg1-yT-IaD"/>
+                                <constraint firstItem="kUb-dk-pls" firstAttribute="top" secondItem="65U-G3-wED" secondAttribute="top" constant="7" id="goc-q0-Es4"/>
+                                <constraint firstAttribute="bottom" secondItem="LdU-u1-CcK" secondAttribute="bottom" constant="7" id="kaq-gd-SCD"/>
+                                <constraint firstItem="sF9-JU-rFu" firstAttribute="top" secondItem="65U-G3-wED" secondAttribute="top" constant="7" id="ndE-Eg-t8i"/>
+                                <constraint firstItem="kUb-dk-pls" firstAttribute="leading" secondItem="LdU-u1-CcK" secondAttribute="trailing" id="qSp-F3-HRh"/>
+                                <constraint firstItem="sF9-JU-rFu" firstAttribute="leading" secondItem="kUb-dk-pls" secondAttribute="trailing" id="rzS-uk-xhd"/>
+                                <constraint firstItem="sF9-JU-rFu" firstAttribute="leading" secondItem="kUb-dk-pls" secondAttribute="trailing" id="wn5-pF-ESJ"/>
+                                <constraint firstAttribute="bottom" secondItem="sF9-JU-rFu" secondAttribute="bottom" constant="7" id="z0K-U8-3Ir"/>
+                                <constraint firstItem="V0u-ha-U8v" firstAttribute="leading" secondItem="65U-G3-wED" secondAttribute="leading" id="zJL-B0-LRm"/>
+                                <constraint firstItem="kUb-dk-pls" firstAttribute="width" secondItem="sF9-JU-rFu" secondAttribute="width" id="zot-2o-Slr"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="Gcx-wx-ZWU"/>
+                                    <exclude reference="ASC-Bf-RFn"/>
+                                </mask>
+                            </variation>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="65U-G3-wED" firstAttribute="leading" secondItem="pU9-wQ-Mf5" secondAttribute="leading" id="Cf8-iI-pHw"/>
+                        <constraint firstItem="65U-G3-wED" firstAttribute="top" secondItem="pU9-wQ-Mf5" secondAttribute="top" id="Mud-6t-tr3"/>
+                        <constraint firstItem="hOb-ab-M3x" firstAttribute="leading" secondItem="pU9-wQ-Mf5" secondAttribute="leading" constant="-1" id="NqX-0f-xF1"/>
+                        <constraint firstItem="hOb-ab-M3x" firstAttribute="top" secondItem="65U-G3-wED" secondAttribute="bottom" constant="8" symbolic="YES" id="Q3c-IN-414"/>
+                        <constraint firstAttribute="trailing" secondItem="65U-G3-wED" secondAttribute="trailing" id="Qd5-mq-boW"/>
+                        <constraint firstAttribute="trailing" secondItem="hOb-ab-M3x" secondAttribute="trailing" constant="1" id="Z2p-Ms-L1E"/>
+                        <constraint firstAttribute="height" constant="118" id="ZmW-5g-pg9"/>
+                        <constraint firstAttribute="bottom" secondItem="hOb-ab-M3x" secondAttribute="bottom" constant="2" id="oe5-JQ-gNh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dwZ-dO-Dos" firstAttribute="top" secondItem="kNR-eF-Vdw" secondAttribute="top" id="0fZ-MC-SMv"/>
+                <constraint firstAttribute="trailing" secondItem="dwZ-dO-Dos" secondAttribute="trailing" id="9h3-v8-WT1"/>
+                <constraint firstItem="dwZ-dO-Dos" firstAttribute="leading" secondItem="kNR-eF-Vdw" secondAttribute="leading" id="IIq-PD-XDf"/>
+                <constraint firstItem="pU9-wQ-Mf5" firstAttribute="trailing" secondItem="dwZ-dO-Dos" secondAttribute="trailing" id="IVu-Bo-pdC"/>
+                <constraint firstItem="dwZ-dO-Dos" firstAttribute="leading" secondItem="kNR-eF-Vdw" secondAttribute="leading" id="NqT-Fx-3tM"/>
+                <constraint firstAttribute="trailing" secondItem="pU9-wQ-Mf5" secondAttribute="trailing" id="WAF-hh-5Eb"/>
+                <constraint firstAttribute="bottom" secondItem="dwZ-dO-Dos" secondAttribute="bottom" id="XwY-oE-GQq"/>
+                <constraint firstItem="dwZ-dO-Dos" firstAttribute="top" secondItem="kNR-eF-Vdw" secondAttribute="top" id="drM-zf-lhu"/>
+                <constraint firstAttribute="bottom" secondItem="dwZ-dO-Dos" secondAttribute="bottom" id="k31-o9-kA8"/>
+                <constraint firstItem="dwZ-dO-Dos" firstAttribute="bottom" secondItem="pU9-wQ-Mf5" secondAttribute="bottom" id="r42-2U-S8x"/>
+                <constraint firstItem="pU9-wQ-Mf5" firstAttribute="leading" secondItem="dwZ-dO-Dos" secondAttribute="leading" id="ydT-nH-gbu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgView" destination="dwZ-dO-Dos" id="Rnt-YM-hBP"/>
+                <outlet property="shareView" destination="65U-G3-wED" id="kaE-7Q-e7m"/>
+                <outlet property="sheetView" destination="pU9-wQ-Mf5" id="xtf-qG-GDa"/>
+            </connections>
+            <point key="canvasLocation" x="217" y="73"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_qq_share" width="138" height="138"/>
+        <image name="icon_weixin_circle_share" width="138" height="138"/>
+        <image name="icon_weixin_share" width="138" height="138"/>
+        <image name="sns_icon_big" width="138" height="138"/>
+    </resources>
+</document>

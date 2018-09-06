@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="SearchDoctorListBaseView" id="Pc0-hK-frB" customClass="SearchDoctorListBaseView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="466"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="niP-FG-20i">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EyT-ul-hj0">
+                            <rect key="frame" x="7" y="12" width="2" height="15"/>
+                            <color key="backgroundColor" red="0.2784313725" green="0.75686274509999996" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QxS-Bm-r6L">
+                            <rect key="frame" x="0.0" y="39" width="320" height="1"/>
+                            <color key="backgroundColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="CR7-rM-ihY"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="名医" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBe-UZ-yku">
+                            <rect key="frame" x="10" y="12" width="30" height="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="QxS-Bm-r6L" secondAttribute="trailing" id="352-vh-wgo"/>
+                        <constraint firstAttribute="height" constant="40" id="Anp-Rq-dfk"/>
+                        <constraint firstAttribute="bottom" secondItem="QxS-Bm-r6L" secondAttribute="bottom" id="XWU-Uj-qf5"/>
+                        <constraint firstItem="QxS-Bm-r6L" firstAttribute="leading" secondItem="niP-FG-20i" secondAttribute="leading" id="eju-eP-kMC"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k68-Dv-HrX">
+                    <rect key="frame" x="0.0" y="416" width="320" height="50"/>
+                    <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="bOt-X3-Org"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="更多">
+                        <color key="titleColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="moreBtnAction:" destination="Pc0-hK-frB" eventType="touchUpInside" id="idf-xE-Jx8"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MUQ-lf-xCr">
+                    <rect key="frame" x="0.0" y="40" width="320" height="376"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="niP-FG-20i" firstAttribute="top" secondItem="Pc0-hK-frB" secondAttribute="top" id="1WS-Lt-E1y"/>
+                <constraint firstAttribute="bottom" secondItem="k68-Dv-HrX" secondAttribute="bottom" id="6ID-A5-Pbm"/>
+                <constraint firstAttribute="trailing" secondItem="niP-FG-20i" secondAttribute="trailing" id="LiT-d8-X46"/>
+                <constraint firstItem="k68-Dv-HrX" firstAttribute="leading" secondItem="Pc0-hK-frB" secondAttribute="leading" id="O0D-ZC-0CX"/>
+                <constraint firstItem="niP-FG-20i" firstAttribute="leading" secondItem="Pc0-hK-frB" secondAttribute="leading" id="gbl-uZ-aE3"/>
+                <constraint firstItem="MUQ-lf-xCr" firstAttribute="top" secondItem="niP-FG-20i" secondAttribute="bottom" id="nMK-RZ-eca"/>
+                <constraint firstAttribute="trailing" secondItem="MUQ-lf-xCr" secondAttribute="trailing" id="s6p-9y-NyU"/>
+                <constraint firstItem="k68-Dv-HrX" firstAttribute="top" secondItem="MUQ-lf-xCr" secondAttribute="bottom" id="slr-db-Pr1"/>
+                <constraint firstAttribute="trailing" secondItem="k68-Dv-HrX" secondAttribute="trailing" id="uVD-3Y-guF"/>
+                <constraint firstItem="MUQ-lf-xCr" firstAttribute="leading" secondItem="Pc0-hK-frB" secondAttribute="leading" id="z1e-Wc-c8X"/>
+                <constraint firstItem="niP-FG-20i" firstAttribute="width" secondItem="Pc0-hK-frB" secondAttribute="width" id="zHD-hi-jjr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="headView" destination="niP-FG-20i" id="2Ym-33-eSa"/>
+                <outlet property="moreBtn" destination="k68-Dv-HrX" id="Aw5-9v-6vy"/>
+                <outlet property="moreBtnHeight" destination="bOt-X3-Org" id="mlj-fW-uEK"/>
+                <outlet property="tableView" destination="MUQ-lf-xCr" id="JCq-Fo-Bf1"/>
+                <outlet property="titleLabel" destination="qBe-UZ-yku" id="eAT-TV-5yJ"/>
+            </connections>
+            <point key="canvasLocation" x="208" y="200"/>
+        </view>
+    </objects>
+</document>

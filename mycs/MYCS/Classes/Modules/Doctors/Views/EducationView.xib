@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleAspectFit" id="iN0-l3-epB" customClass="EducationView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ibh-0Z-YGf">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="首都医科大学宣武学院(2002.09-2005.06)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Pf-pg-fQF">
+                            <rect key="frame" x="9" y="5" width="302" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="q5L-52-qCx"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.26274509800000001" green="0.26274509800000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="专业：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKw-vb-ojl">
+                            <rect key="frame" x="10" y="29" width="36" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.26274509800000001" green="0.26274509800000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="神经病学" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSt-Ru-zdV">
+                            <rect key="frame" x="44" y="29" width="84" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="OZu-N7-j0e"/>
+                                <constraint firstAttribute="width" constant="84" id="YPD-mD-ReC"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.26274509800000001" green="0.26274509800000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="学位：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLl-xl-Gps">
+                            <rect key="frame" x="142" y="29" width="36" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="fEq-hS-4FU"/>
+                                <constraint firstAttribute="width" constant="36" id="lf7-HI-Wrt"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.26274509800000001" green="0.26274509800000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="博士后" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jdh-Dt-Laj">
+                            <rect key="frame" x="175" y="29" width="136" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="edr-Ns-2vN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.26274509800000001" green="0.26274509800000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="lLl-xl-Gps" firstAttribute="top" secondItem="ibh-0Z-YGf" secondAttribute="top" constant="29" id="14p-eh-SL6"/>
+                        <constraint firstItem="5Pf-pg-fQF" firstAttribute="top" secondItem="ibh-0Z-YGf" secondAttribute="top" constant="5" id="52T-gm-B1Z"/>
+                        <constraint firstItem="lLl-xl-Gps" firstAttribute="leading" secondItem="OSt-Ru-zdV" secondAttribute="trailing" constant="14" id="AkU-MT-GwT"/>
+                        <constraint firstItem="OSt-Ru-zdV" firstAttribute="leading" secondItem="ibh-0Z-YGf" secondAttribute="leading" constant="44" id="BrE-Y6-OQX"/>
+                        <constraint firstItem="Jdh-Dt-Laj" firstAttribute="top" secondItem="ibh-0Z-YGf" secondAttribute="top" constant="29" id="Dcb-wZ-08c"/>
+                        <constraint firstItem="lLl-xl-Gps" firstAttribute="leading" secondItem="OSt-Ru-zdV" secondAttribute="trailing" constant="14" id="bjg-CM-efh"/>
+                        <constraint firstItem="OSt-Ru-zdV" firstAttribute="top" secondItem="ibh-0Z-YGf" secondAttribute="top" constant="29" id="ghF-Zv-sNn"/>
+                        <constraint firstAttribute="trailing" secondItem="5Pf-pg-fQF" secondAttribute="trailing" constant="9" id="nLV-Gh-bmr"/>
+                        <constraint firstItem="Jdh-Dt-Laj" firstAttribute="leading" secondItem="lLl-xl-Gps" secondAttribute="trailing" constant="-3" id="rE4-Yx-Q01"/>
+                        <constraint firstAttribute="trailing" secondItem="Jdh-Dt-Laj" secondAttribute="trailing" constant="9" id="tGR-ol-6Wg"/>
+                        <constraint firstItem="5Pf-pg-fQF" firstAttribute="leading" secondItem="ibh-0Z-YGf" secondAttribute="leading" constant="9" id="tgX-y9-oxe"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ibh-0Z-YGf" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="1nY-gD-GH3"/>
+                <constraint firstItem="ibh-0Z-YGf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="J6D-Wy-7ak"/>
+                <constraint firstItem="ibh-0Z-YGf" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="YV5-TS-HQd"/>
+                <constraint firstItem="ibh-0Z-YGf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="YVP-Qi-F0b"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="degreeL" destination="Jdh-Dt-Laj" id="lIm-se-K6P"/>
+                <outlet property="educationL" destination="5Pf-pg-fQF" id="ZwJ-kd-EWE"/>
+                <outlet property="professionL" destination="OSt-Ru-zdV" id="0hX-pi-Fdg"/>
+                <outlet property="professionLConstraintW" destination="YPD-mD-ReC" id="Mie-sG-VOU"/>
+            </connections>
+            <point key="canvasLocation" x="234" y="215"/>
+        </view>
+    </objects>
+</document>

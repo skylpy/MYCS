@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DoctorDetailView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="145"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DIV-eL-Red">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="145"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeImage" translatesAutoresizingMaskIntoConstraints="NO" id="sK2-io-5dZ">
+                            <rect key="frame" x="10" y="10" width="67" height="67"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="67" id="JEZ-wv-Oil"/>
+                                <constraint firstAttribute="width" constant="67" id="oNo-8N-tdS"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="陈涛涛" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JrM-7C-SwX">
+                            <rect key="frame" x="87" y="10" width="48" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="bPN-NK-dyu"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主任医师" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prp-iW-Poi">
+                            <rect key="frame" x="146" y="10" width="56" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="lBb-hc-Lva"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中华医学会广东外科学会委员会" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpN-EF-5Vr">
+                            <rect key="frame" x="87" y="33" width="223" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="p0d-2i-Fjz"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Healthhospital" translatesAutoresizingMaskIntoConstraints="NO" id="xii-a6-7aj">
+                            <rect key="frame" x="87" y="58" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="16" id="WT9-6Z-IQW"/>
+                                <constraint firstAttribute="height" constant="16" id="wah-r0-HXj"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中山大学附属医院" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1l-Bv-BxB">
+                            <rect key="frame" x="110" y="56" width="112" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="2SW-Xt-zwr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.2784313725" green="0.75686274509999996" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="俺啥时候骄傲的杀手的环境看暗杀的环境爱是不大数据库撒娇女家属及卡数据库回家就撒旦监控那家电视剧的数据库文件的空间为可为空文化背景及额外课外访问放假了客服亲考虑起来看前方路口请问大家可千万的快乐可千万可千万的冷空气" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4g-n0-MYb">
+                            <rect key="frame" x="8" y="90" width="304" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUe-AY-FGK">
+                            <rect key="frame" x="85" y="3" width="227" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="AKU-xp-RxK"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                            <state key="normal" image="health-pack-up"/>
+                            <state key="selected" image="health-unfold"/>
+                            <connections>
+                                <action selector="doctorDetailBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="fbT-Vu-lrp"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9o-h3-J37">
+                            <rect key="frame" x="87" y="55" width="214" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="rea-cI-ai6"/>
+                            </constraints>
+                            <connections>
+                                <action selector="hospitalNameTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="jEt-3Y-TR7"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="D9o-h3-J37" secondAttribute="trailing" constant="19" id="0e7-rN-3vd"/>
+                        <constraint firstItem="prp-iW-Poi" firstAttribute="top" secondItem="DIV-eL-Red" secondAttribute="top" constant="10" id="38h-hI-AQF"/>
+                        <constraint firstItem="D9o-h3-J37" firstAttribute="top" secondItem="vpN-EF-5Vr" secondAttribute="bottom" constant="1" id="8Ek-Xv-J7k"/>
+                        <constraint firstItem="sK2-io-5dZ" firstAttribute="top" secondItem="DIV-eL-Red" secondAttribute="top" constant="10" id="8nP-8j-mTP"/>
+                        <constraint firstItem="H4g-n0-MYb" firstAttribute="leading" secondItem="DIV-eL-Red" secondAttribute="leading" constant="8" id="ARI-yh-T2v"/>
+                        <constraint firstItem="sK2-io-5dZ" firstAttribute="leading" secondItem="DIV-eL-Red" secondAttribute="leading" constant="10" id="FCW-q2-qKh"/>
+                        <constraint firstAttribute="trailing" secondItem="H4g-n0-MYb" secondAttribute="trailing" constant="8" id="K7t-2Z-iLE"/>
+                        <constraint firstItem="vpN-EF-5Vr" firstAttribute="top" secondItem="JrM-7C-SwX" secondAttribute="bottom" constant="2" id="MML-vi-n1W"/>
+                        <constraint firstItem="JrM-7C-SwX" firstAttribute="top" secondItem="DIV-eL-Red" secondAttribute="top" constant="10" id="Rr4-1t-QJb"/>
+                        <constraint firstItem="D9o-h3-J37" firstAttribute="leading" secondItem="sK2-io-5dZ" secondAttribute="trailing" constant="10" id="SVI-Mp-Atg"/>
+                        <constraint firstItem="H4g-n0-MYb" firstAttribute="top" secondItem="sK2-io-5dZ" secondAttribute="bottom" constant="13" id="T06-gW-dVv"/>
+                        <constraint firstItem="AUe-AY-FGK" firstAttribute="top" secondItem="DIV-eL-Red" secondAttribute="top" constant="3" id="Ud3-EI-T1p"/>
+                        <constraint firstItem="vpN-EF-5Vr" firstAttribute="leading" secondItem="sK2-io-5dZ" secondAttribute="trailing" constant="10" id="WZu-IN-20M"/>
+                        <constraint firstItem="o1l-Bv-BxB" firstAttribute="leading" secondItem="xii-a6-7aj" secondAttribute="trailing" constant="7" id="YHO-L0-XFQ"/>
+                        <constraint firstItem="xii-a6-7aj" firstAttribute="leading" secondItem="sK2-io-5dZ" secondAttribute="trailing" constant="10" id="bic-Ix-MPA"/>
+                        <constraint firstItem="xii-a6-7aj" firstAttribute="top" secondItem="vpN-EF-5Vr" secondAttribute="bottom" constant="4" id="d9Y-21-S5Y"/>
+                        <constraint firstItem="JrM-7C-SwX" firstAttribute="leading" secondItem="sK2-io-5dZ" secondAttribute="trailing" constant="10" id="e4B-ck-BYK"/>
+                        <constraint firstItem="AUe-AY-FGK" firstAttribute="leading" secondItem="sK2-io-5dZ" secondAttribute="trailing" constant="8" id="kJj-fx-Uig"/>
+                        <constraint firstItem="prp-iW-Poi" firstAttribute="leading" secondItem="JrM-7C-SwX" secondAttribute="trailing" constant="11" id="mkJ-GI-lDX"/>
+                        <constraint firstItem="o1l-Bv-BxB" firstAttribute="top" secondItem="vpN-EF-5Vr" secondAttribute="bottom" constant="2" id="pAM-91-U6S"/>
+                        <constraint firstAttribute="trailing" secondItem="AUe-AY-FGK" secondAttribute="trailing" constant="8" id="vx3-us-SSn"/>
+                        <constraint firstAttribute="trailing" secondItem="vpN-EF-5Vr" secondAttribute="trailing" constant="10" id="yu0-om-1B3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="DIV-eL-Red" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ror-Pl-C1u"/>
+                <constraint firstAttribute="bottom" secondItem="DIV-eL-Red" secondAttribute="bottom" id="ZNJ-6p-W1C"/>
+                <constraint firstItem="DIV-eL-Red" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bQg-ak-sbj"/>
+                <constraint firstAttribute="trailing" secondItem="DIV-eL-Red" secondAttribute="trailing" id="kHT-2a-KoA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="doctorDetailL" destination="H4g-n0-MYb" id="hN9-yR-GyM"/>
+                <outlet property="doctorHospital" destination="o1l-Bv-BxB" id="OSq-Y0-vu9"/>
+                <outlet property="doctorImageView" destination="sK2-io-5dZ" id="bY9-Lb-0mw"/>
+                <outlet property="doctorNameL" destination="JrM-7C-SwX" id="ZFQ-bn-2iJ"/>
+                <outlet property="doctorObjL" destination="prp-iW-Poi" id="iLI-Zn-t4E"/>
+                <outlet property="doctorOfficeL" destination="vpN-EF-5Vr" id="cNB-ed-zwF"/>
+                <outlet property="showDetailBtn" destination="AUe-AY-FGK" id="aQ3-ZO-fce"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="Healthhospital" width="16" height="16"/>
+        <image name="health-pack-up" width="15" height="8"/>
+        <image name="health-unfold" width="15" height="8"/>
+        <image name="placeImage" width="200" height="120"/>
+    </resources>
+</document>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="GA9-xA-zRC" customClass="AssessSOPDownloadView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" alpha="0.40000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zA2-gM-Zwe" userLabel="BGButton">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="BGBtnAction:" destination="GA9-xA-zRC" eventType="touchUpInside" id="D5S-6g-EYF"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C2e-S4-7GU" userLabel="topView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0UR-ED-XKe">
+                            <rect key="frame" x="0.0" y="8" width="46" height="30"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKK-vs-rYt">
+                            <rect key="frame" x="86" y="10" width="56" height="29"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="全部缓存">
+                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0g-hT-ZqW" userLabel="cancelBtn">
+                            <rect key="frame" x="319" y="10" width="46" height="30"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="rKK-vs-rYt" firstAttribute="centerY" secondItem="C2e-S4-7GU" secondAttribute="centerY" id="8HO-X8-Rga"/>
+                        <constraint firstAttribute="height" constant="50" id="BiN-GH-epi"/>
+                        <constraint firstItem="O0g-hT-ZqW" firstAttribute="centerY" secondItem="C2e-S4-7GU" secondAttribute="centerY" id="IEa-EF-kK0"/>
+                        <constraint firstItem="0UR-ED-XKe" firstAttribute="centerY" secondItem="C2e-S4-7GU" secondAttribute="centerY" id="QPC-Pc-lkX"/>
+                        <constraint firstAttribute="trailing" secondItem="O0g-hT-ZqW" secondAttribute="trailing" constant="10" id="iNt-0B-GkR"/>
+                        <constraint firstItem="rKK-vs-rYt" firstAttribute="leading" secondItem="0UR-ED-XKe" secondAttribute="trailing" constant="30" id="pJm-do-bEX"/>
+                        <constraint firstItem="0UR-ED-XKe" firstAttribute="leading" secondItem="C2e-S4-7GU" secondAttribute="leading" constant="10" id="sNv-HY-Dgj"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EXB-ev-9x3">
+                    <rect key="frame" x="0.0" y="50" width="375" height="617"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zA2-gM-Zwe" secondAttribute="trailing" id="9Qb-JY-vwa"/>
+                <constraint firstItem="EXB-ev-9x3" firstAttribute="leading" secondItem="GA9-xA-zRC" secondAttribute="leading" id="CMq-bs-NFF"/>
+                <constraint firstAttribute="bottom" secondItem="zA2-gM-Zwe" secondAttribute="bottom" id="MjO-2M-w4a"/>
+                <constraint firstItem="C2e-S4-7GU" firstAttribute="leading" secondItem="GA9-xA-zRC" secondAttribute="leading" id="PmV-x6-V3W"/>
+                <constraint firstItem="zA2-gM-Zwe" firstAttribute="leading" secondItem="GA9-xA-zRC" secondAttribute="leading" id="V7B-rb-yU2"/>
+                <constraint firstAttribute="bottom" secondItem="EXB-ev-9x3" secondAttribute="bottom" id="eg5-z4-kBB"/>
+                <constraint firstAttribute="trailing" secondItem="C2e-S4-7GU" secondAttribute="trailing" id="exj-Iw-dUD"/>
+                <constraint firstAttribute="trailing" secondItem="EXB-ev-9x3" secondAttribute="trailing" id="jZK-TZ-T72"/>
+                <constraint firstItem="EXB-ev-9x3" firstAttribute="top" secondItem="C2e-S4-7GU" secondAttribute="bottom" id="pWr-Id-xBH"/>
+                <constraint firstItem="C2e-S4-7GU" firstAttribute="top" secondItem="GA9-xA-zRC" secondAttribute="top" id="t09-d7-0xL"/>
+                <constraint firstItem="zA2-gM-Zwe" firstAttribute="top" secondItem="GA9-xA-zRC" secondAttribute="top" id="zcA-UQ-rws"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <connections>
+                <outlet property="allDownloadBtn" destination="rKK-vs-rYt" id="igN-Ar-qeD"/>
+                <outlet property="cancelBtn" destination="O0g-hT-ZqW" id="Ces-cu-E5l"/>
+                <outlet property="downloadListBtn" destination="0UR-ED-XKe" id="ZSR-XH-kO5"/>
+                <outlet property="listTableView" destination="EXB-ev-9x3" id="efP-X8-c4a"/>
+            </connections>
+            <point key="canvasLocation" x="221" y="-35"/>
+        </view>
+    </objects>
+</document>

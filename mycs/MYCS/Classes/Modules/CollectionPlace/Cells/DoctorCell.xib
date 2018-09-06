@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="DoctorCell" rowHeight="94" id="KGk-i7-Jjw" customClass="DoctorCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="93"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="blO-DH-3th">
+                        <rect key="frame" x="11" y="16" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="5lN-wc-iSz"/>
+                            <constraint firstAttribute="width" constant="60" id="ILi-0r-6RG"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5lN-wc-iSz"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="knr-m5-GAC">
+                        <rect key="frame" x="84" y="16" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="BmU-Fn-Bu1"/>
+                            <constraint firstAttribute="height" constant="21" id="qKb-EF-eMz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTB-jE-GVn">
+                        <rect key="frame" x="84" y="38" width="224" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="pEf-gx-quo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27V-qe-hl1">
+                        <rect key="frame" x="84" y="58" width="224" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="MuX-4D-RRh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="famous" translatesAutoresizingMaskIntoConstraints="NO" id="5Rs-gb-B5u">
+                        <rect key="frame" x="131" y="19" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="eEJ-GA-OrJ"/>
+                            <constraint firstAttribute="height" constant="15" id="np9-Gj-5a7"/>
+                        </constraints>
+                    </imageView>
+                    <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBQ-Po-7am">
+                        <rect key="frame" x="288" y="10" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="Jeh-z7-dcU"/>
+                            <constraint firstAttribute="height" constant="22" id="fbM-fQ-84k"/>
+                        </constraints>
+                        <state key="normal" image="radio_m"/>
+                        <state key="selected" image="radio_select"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="knr-m5-GAC" firstAttribute="leading" secondItem="blO-DH-3th" secondAttribute="trailing" constant="13" id="3Nc-7I-iB3"/>
+                    <constraint firstItem="5Rs-gb-B5u" firstAttribute="leading" secondItem="knr-m5-GAC" secondAttribute="trailing" constant="5" id="7ce-M9-TL5"/>
+                    <constraint firstItem="27V-qe-hl1" firstAttribute="top" secondItem="knr-m5-GAC" secondAttribute="bottom" constant="21" id="Bwx-Ta-dud"/>
+                    <constraint firstItem="blO-DH-3th" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="11" id="CBH-cq-Wr7"/>
+                    <constraint firstItem="5Rs-gb-B5u" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="DbH-zP-SlD"/>
+                    <constraint firstAttribute="trailing" secondItem="LBQ-Po-7am" secondAttribute="trailing" constant="10" id="F2w-Hd-CZk"/>
+                    <constraint firstItem="eTB-jE-GVn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="30" id="NWn-bC-DhQ"/>
+                    <constraint firstAttribute="trailing" secondItem="27V-qe-hl1" secondAttribute="trailing" constant="12" id="OJy-Na-5ee"/>
+                    <constraint firstItem="LBQ-Po-7am" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="PGv-sc-Vdd"/>
+                    <constraint firstAttribute="trailing" secondItem="eTB-jE-GVn" secondAttribute="trailing" constant="12" id="Rx6-yr-WkH"/>
+                    <constraint firstAttribute="bottom" secondItem="blO-DH-3th" secondAttribute="bottom" constant="17" id="T11-6M-KsA"/>
+                    <constraint firstItem="knr-m5-GAC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Wpq-jA-RnZ"/>
+                    <constraint firstAttribute="bottom" secondItem="27V-qe-hl1" secondAttribute="bottom" constant="14" id="fc7-zi-lFz"/>
+                    <constraint firstItem="eTB-jE-GVn" firstAttribute="leading" secondItem="blO-DH-3th" secondAttribute="trailing" constant="13" id="jfq-s9-Nl9"/>
+                    <constraint firstItem="eTB-jE-GVn" firstAttribute="top" secondItem="knr-m5-GAC" secondAttribute="bottom" constant="1" id="mAV-NR-cEc"/>
+                    <constraint firstItem="5Rs-gb-B5u" firstAttribute="leading" secondItem="knr-m5-GAC" secondAttribute="trailing" constant="5" id="oFJ-Tw-VJw"/>
+                    <constraint firstItem="blO-DH-3th" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="uLW-Uw-cKe"/>
+                    <constraint firstItem="27V-qe-hl1" firstAttribute="leading" secondItem="blO-DH-3th" secondAttribute="trailing" constant="13" id="uem-ZY-Gpp"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="mAV-NR-cEc"/>
+                        <exclude reference="Bwx-Ta-dud"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="famousImageView" destination="5Rs-gb-B5u" id="LbA-8y-vhF"/>
+                <outlet property="goodAtLabel" destination="27V-qe-hl1" id="O4g-5c-vn5"/>
+                <outlet property="nameLConstraintW" destination="BmU-Fn-Bu1" id="2Zc-lx-WbG"/>
+                <outlet property="nameLabel" destination="knr-m5-GAC" id="lDP-cH-jgw"/>
+                <outlet property="personImage" destination="blO-DH-3th" id="Kgz-D7-vqI"/>
+                <outlet property="positionLabel" destination="eTB-jE-GVn" id="THw-PZ-vln"/>
+                <outlet property="selectButton" destination="LBQ-Po-7am" id="Wf5-JF-ZMf"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="famous" width="15" height="15"/>
+        <image name="radio_m" width="22" height="22"/>
+        <image name="radio_select" width="23" height="22"/>
+    </resources>
+</document>

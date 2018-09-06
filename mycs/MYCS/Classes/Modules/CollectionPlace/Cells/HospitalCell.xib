@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HospitalCell" rowHeight="94" id="KGk-i7-Jjw" customClass="HospitalCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="93"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YwZ-68-NKg">
+                        <rect key="frame" x="10" y="20" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="Ppy-T6-Fgu"/>
+                            <constraint firstAttribute="height" constant="60" id="Y4Z-9F-ohK"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VkD-J1-dHa">
+                        <rect key="frame" x="83" y="25" width="177" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="z1P-O8-hRK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tuh-iv-VoL">
+                        <rect key="frame" x="83" y="42" width="224" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="2uh-F5-cSv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRc-4S-fvw">
+                        <rect key="frame" x="288" y="10" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="g3R-dC-FEq"/>
+                            <constraint firstAttribute="width" constant="22" id="yPe-HJ-YUs"/>
+                        </constraints>
+                        <state key="normal" image="radio_m"/>
+                        <state key="selected" image="radio_select"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uRc-4S-fvw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="2jk-ap-HkD"/>
+                    <constraint firstItem="uRc-4S-fvw" firstAttribute="leading" secondItem="VkD-J1-dHa" secondAttribute="trailing" constant="28" id="6Yf-MS-GUy"/>
+                    <constraint firstAttribute="trailing" secondItem="uRc-4S-fvw" secondAttribute="trailing" constant="10" id="9YC-Hj-lob"/>
+                    <constraint firstItem="tuh-iv-VoL" firstAttribute="leading" secondItem="YwZ-68-NKg" secondAttribute="trailing" constant="13" id="Ews-fJ-CRH"/>
+                    <constraint firstItem="tuh-iv-VoL" firstAttribute="top" secondItem="VkD-J1-dHa" secondAttribute="bottom" constant="-4" id="ORO-Pp-w3A"/>
+                    <constraint firstItem="VkD-J1-dHa" firstAttribute="leading" secondItem="YwZ-68-NKg" secondAttribute="trailing" constant="13" id="i1a-kv-a7I"/>
+                    <constraint firstItem="VkD-J1-dHa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="pue-nM-xd0"/>
+                    <constraint firstItem="YwZ-68-NKg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="wIu-1G-EPc"/>
+                    <constraint firstItem="YwZ-68-NKg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="xfL-sv-T0w"/>
+                    <constraint firstAttribute="trailing" secondItem="tuh-iv-VoL" secondAttribute="trailing" constant="13" id="yJh-J4-egG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImageView" destination="YwZ-68-NKg" id="cKA-m0-eW6"/>
+                <outlet property="introductionL" destination="tuh-iv-VoL" id="9HV-p3-18s"/>
+                <outlet property="nameL" destination="VkD-J1-dHa" id="dgj-jr-b2j"/>
+                <outlet property="selectButton" destination="uRc-4S-fvw" id="0zr-eg-qxM"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="radio_m" width="22" height="22"/>
+        <image name="radio_select" width="23" height="22"/>
+    </resources>
+</document>

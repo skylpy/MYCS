@@ -1,0 +1,71 @@
+//
+//  PrefixHeader.pch
+//  MYCS
+//
+//  Created by AdminZhiHua on 15/12/28.
+//  Copyright © 2015年 MYCS. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+
+#import "UIView+frameAccessor.h"
+#import "UIViewController+Message.h"
+#import "AppDelegate.h"
+#import "AppManager.h"
+#import "ConstKeys.h"
+#import "UMAnalyticsHelper.h"
+
+#define ScreenW [UIScreen mainScreen].bounds.size.width
+#define ScreenH [UIScreen mainScreen].bounds.size.height
+
+#define PlaceHolderImage [UIImage imageNamed:@"placeImage"]
+
+#endif
+
+/**< 颜色 */
+// rgb颜色转换（16进制->10进制）
+#define HEXRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#define RGBCOLOR(r,g,b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
+
+#define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f \
+alpha:(a)]
+
+// 随机色
+#define HMRandomColor RGBCOLOR(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+
+// 浅灰——背景颜色
+#define bgsColor ([UIColor colorWithRed:((240)/255.0) green:((240)/255.0) blue:((240)/255.0) alpha:(1.0)])
+
+/**< 重写NSLog,Debug模式下打印日志和当前行数 */
+#if DEBUG
+#define NSLog(FORMAT, ...) fprintf(stderr,"\nfunction:%s line:%d content:%s\n", __FUNCTION__, __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#else
+#define NSLog(FORMAT, ...) nil
+#endif
+
+//判断系统版本
+#define iS_IOS_AT_LEAST(ver)    ([[[UIDevice currentDevice] systemVersion] compare:ver] != NSOrderedAscending)
+
+#define iS_IOS10LATER                 ([[UIDevice currentDevice] systemVersion].floatValue >= 10.0)
+#define iS_IOS9LATER                 (__IPHONE_OS_VERSION_MAX_ALLOWED >= 90000 && iS_IOS_AT_LEAST(@"9.0"))
+#define iS_IOS8LATER                 (__IPHONE_OS_VERSION_MAX_ALLOWED >= 80000 && iS_IOS_AT_LEAST(@"8.0"))
+#define iS_IOS7LATER                 (__IPHONE_OS_VERSION_MAX_ALLOWED >= 70000 && iS_IOS_AT_LEAST(@"7.0"))
+#define iS_IOS6LATER                 (__IPHONE_OS_VERSION_MAX_ALLOWED >= 60000 && iS_IOS_AT_LEAST(@"6.0"))
+
+
+#define iS_IOS7                      (iS_IOS7LATER && !iS_IOS8LATER)
+
+#define iS_IOS8                      (iS_IOS8LATER && !iS_IOS9LATER)
+
+#define iS_IOS9                      (iS_IOS9LATER && !iS_IOS10LATER)
+
+#define iS_IOS10                      (iS_IOS10LATER)
+
+#define PlaceHolderImage [UIImage imageNamed:@"placeImage"]
+
+
+#endif
